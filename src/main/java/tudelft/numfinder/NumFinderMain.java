@@ -13,5 +13,10 @@ public class NumFinderMain {
 
         System.out.println(nf.getLargest());
         System.out.println(nf.getSmallest());
+
+        nf = new NumFinder();
+        nf.find(new int[] {});
+        System.out.println(nf.getLargest());
+        System.out.println(nf.getSmallest());
     }
 }

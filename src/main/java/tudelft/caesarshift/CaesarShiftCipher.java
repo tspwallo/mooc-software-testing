@@ -7,12 +7,12 @@ public class CaesarShiftCipher {
         char currentChar;
         int length = message.length();
 
-        shift = shift%26;
+        shift = shift % 26;
 
-        for(int i = 0; i < length; i++){
+        for (int i = 0; i < length; i++){
             currentChar = message.charAt(i);
            
-            sb.append(currentChar);
+            //sb.append(currentChar);
             if (currentChar > 'z' || currentChar < 'a') {
                 return "invalid";
             } else if ((char) (currentChar + shift) > 'z') {

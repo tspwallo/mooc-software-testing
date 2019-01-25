@@ -16,5 +16,9 @@ public class CountLettersTest {
         int words = new CountLetters().count("cats|dog");
         Assertions.assertEquals(1, words);
     }
-
+    @Test
+    public void lastWordEndWithR() {
+        int words = new CountLetters().count("bees|cat|beer|beer");
+        Assertions.assertEquals(3, words);
+    }
 }
