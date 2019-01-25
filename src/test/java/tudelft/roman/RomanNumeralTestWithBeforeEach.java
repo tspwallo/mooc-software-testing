@@ -1,17 +1,23 @@
 package tudelft.roman;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class RomanNumeralTestWithBeforeEach {
 
-    private RomanNumeral roman;
+    private static RomanNumeral roman;
 
-    @BeforeEach
+    @BeforeAll
+    public static void initialize() {
+        roman = new RomanNumeral();
+    }
+
+/*    @BeforeEach
     public void initialize() {
         this.roman = new RomanNumeral();
-    }
+    }*/
 
     @Test
     public void singleNumber() {
